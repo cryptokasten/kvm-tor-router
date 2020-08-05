@@ -5,11 +5,11 @@
 
 ** System environment
 
-- Debian 9.11
+- Debian 10.5
 
-- iptables 1.6.2
+- iptables 1.8.2
 
-- Tor 0.2.9.16
+- Tor 0.3.5.10
 
 ** Configuring KVM networks
 
@@ -30,10 +30,8 @@ apt install tor
 ** Configuring Tor
 
 #+BEGIN_SRC conf
-TransPort 9040
-TransListenAddress 10.152.128.1
-DNSPort 53
-DNSListenAddress 10.152.128.1
+TransPort 10.152.128.1:9040
+DNSPort 10.152.128.1:53
 #+END_SRC
 
 ** Starting Tor
